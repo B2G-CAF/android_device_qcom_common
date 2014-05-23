@@ -61,6 +61,7 @@ case "$baseband" in
 
     if [ "$multisim" = "dsds" ] || [ "$multisim" = "dsda" ]; then
         start ril-daemon1
+        start rilproxy1
     elif [ "$multisim" = "tsts" ]; then
         start ril-daemon1
         start ril-daemon2
